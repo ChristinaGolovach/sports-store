@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/Content/Admin.css" type="text/css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @if (TempData["message"] != null)
+        {
+            <div class="Message">@TempData["message"]</div>
+        }
+        @RenderBody()
+    </div>
+</body>
+</html>
